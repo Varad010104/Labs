@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            background: #9f9ca2a3;
+        }
+
+        .container h1 {
+            text-align: center;
+            width: 100%;
+            background: brown;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .container .form-div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: white;
+            width: 100%;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 13px;
+        }
+
+        .form-div form {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .laptop-div,
+        .smartphone-div,
+        .HeadPhones-div,
+        .Tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        label {
+            font-size: 18px;
+            color: rebeccapurple;
+            font-weight: 800;
+        }
+
+        input {
+            height: 25px;
+        }
+
+        button {
+            padding: 8px;
+            width: 114%;
+            border: none;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            background: blueviolet;
+            color: wheat;
+            box-shadow: 2px 3px 6px orange;
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: 2rem;
+            text-shadow: 3px -1px 0px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sample Online Items and Prices</h1>
+        <div class="form-div">
+            <form action="#" method="post">
+                <div class="laptop-div">
+                    <label for="laptop">Laptop($800 each):</label>
+                    <input type="number" name="laptop" id="laptop" required>
+                </div>
+
+                <div class="smartphone-div">
+                    <label for="Smartphone">Smartphone($400 each):</label>
+                    <input type="number" name="Smartphone" id="Smartphone" required>
+                </div>
+
+                <div class="HeadPhones-div">
+                    <label for="Headphones">Headphones($50 each):</label>
+                    <input type="number" name="Headphones" id="Headphones" required>
+                </div>
+
+                <div class="Tablet">
+                    <label for="Tablet">Tablet($300 each):</label>
+                    <input type="number" name="Tablet" id="Tablet" required>
+                </div>
+                <button type="submit">Calculate Total Price</button>
+            </form>
+
+        </div>
+        <h3>Total Price:$0</h3>
+    </div>
+</body>
+
+</html>
