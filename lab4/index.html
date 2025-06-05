@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survay Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form action="#" method="POST">
+    <fieldset>
+      <legend>Survay Form</legend>
+
+      <div class="form-group">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" id="Name" required placeholder="Enter your Name.">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="Email">
+      </div>
+
+      <div class="form-group">
+        <label for="Age">Age:</label>
+        <input type="number" name="Age" id="Age" required placeholder="Enter Your Age">
+      </div>
+
+      <div class="form-group">
+        <label for="profession">Profession:</label>
+        <select name="profession" id="profession" required>
+          <option value="">Select profession</option>
+          <option value="Student">Student</option>
+          <option value="Working">Working</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <label>Would You Recommoned this survay from to a friend:</label>
+        <div class="input-group">
+          <label><input type="radio" name="options" value="Yes" required> Yes</label>
+          <label><input type="radio" name="options" value="No" required> No</label>
+          <label><input type="radio" name="options" value="Maybe" required> Maybe</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Languages and Framework Known:</label>
+        <div class="input-group">
+          <label><input type="checkbox" name="department" value="Python">Python</label>
+          <label><input type="checkbox" name="department" value="React">React</label>
+          <label><input type="checkbox" name="department" value="Java">Java</label>
+          <label><input type="checkbox" name="department" value="Angular">Angular</label>
+          <label><input type="checkbox" name="department" value="Spring">Spring</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea name="feedback" id="feedback" rows="4" cols="40" placeholder="Feedback"></textarea>
+      </div>
+
+      <div class="form-group center">
+        <input type="submit" value="Sign Up">
+      </div>
+
+    </fieldset>
+  </form>
+</body>
+</html>
