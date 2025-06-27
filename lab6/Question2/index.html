@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>User Information</h1>
+  <div id="user-container" class="user-info"></div>
+
+  <script>
+    const userData = {
+      name: "Varad Choudhari",
+      age: 21,
+      email: "varadchoudhari7@gmail.com"
+    };
+
+    const container = document.getElementById('user-container');
+
+    const userName = document.createElement('p');
+    userName.textContent = `Name: ${userData.name}`;
+
+    const ageEl = document.createElement('p');
+    ageEl.textContent = `Age: ${userData.age}`;
+
+    const emailEl = document.createElement('p');
+    emailEl.textContent = `Email: ${userData.email}`;
+
+  
+    container.appendChild(userName);
+    container.appendChild(ageEl);
+    container.appendChild(emailEl);
+  </script>
+
+</body>
+</html>
