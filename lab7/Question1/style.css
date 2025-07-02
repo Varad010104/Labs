@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container main {
+  text-align: center;
+  background-color: rgb(152, 150, 150);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.container main button {
+  margin-top: 1rem;
+  padding: 0.3rem;
+  background-color: rgba(37, 37, 242, 0.582);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.container main .image-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.container main .image-container img {
+  object-fit: cover;
+  height: 8rem;
+  width: 12rem;
+}
